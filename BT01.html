@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .step {
+            display: none;
+        }
+        .active {
+            display: block;
+        }
+        .button-container {
+            text-align: center;
+        }
+        button {
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="step-1" class="step-active">
+        <h2>Step 1: Personal Information</h2>
+        <button onclick="nextStep()">Next</button>
+    </div>
+
+    <div id="step-2" class="step-active">
+        <h2>Step 2: Address</h2>
+        <button onclick="prevStep">Prev</button>
+        <button onclick="nextStep()">Next</button>
+    </div>
+
+    <div id="step-3" class="step-active">
+        <h2>Step 3: Payment</h2>
+        <button onclick="prevStep()">Prev</button>
+        <button onclick="nextStep()">Next</button>
+    </div>
+
+    <div id="step-4" class="step-active">
+        <h2>Step 4: Review</h2>
+        <button onclick="prevStep()">Prev</button>
+        <button onclick="submitForm()">Next</button>
+    </div>
+
+    <script src="./BT01.js"></script>
+</body>
+</html>

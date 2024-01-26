@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+          margin: 0;
+          font-family: Arial, sans-serif;
+        }
+        .container {
+          text-align: center;
+        }
+        input[type="checkbox"] {
+          margin-right: 5px;
+        }
+        input[type="button"] {
+          margin-top: 10px;
+          padding: 8px 16px;
+          font-size: 16px;
+          cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Password Generator</h1>
+        <div>
+          <label for="length">Password Length:</label>
+          <input type="number" id="length" min="8" value="8">
+        </div>
+        <div>
+          <input type="checkbox" id="uppercase" checked>
+          <label for="uppercase">Include Uppercase Letters</label>
+        </div>
+        <div>
+          <input type="checkbox" id="lowercase" checked>
+          <label for="lowercase">Include Lowercase Letters</label>
+        </div>
+        <div>
+          <input type="checkbox" id="numbers" checked>
+          <label for="numbers">Include Numbers</label>
+        </div>
+        <div>
+          <input type="checkbox" id="specialChars" checked>
+          <label for="specialChars">Include Symbols</label>
+        </div>
+        <input type="button" value="Generate Password" onclick="generatePassword()">
+        <input type="text" id="password" readonly>
+        <br>
+        <button onclick="copyToClipboard()">Generate Password</button>
+    </div>
+    <script src="./BT07.js"></script>
+</body>
+</html>

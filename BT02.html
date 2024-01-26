@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .search-container {
+            position: relative;
+            display: flex;
+            align-items: center;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+            overflow: hidden;
+            transition: width 0.5s;
+        }
+        button {
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            padding: 5px;
+            outline: none;
+        }
+        input {
+            width: 0;
+            padding: 10px;
+            border: none;
+            background-color: transparent;
+            outline: none;
+            transition: width 0.5s, padding 0.5s;
+        }
+        input:focus {
+            width: 200px;
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="search-container">
+        <button id="toggleSearchButton">
+            <img src="search-icon.png" alt="Search Icon">
+        </button>
+        <input type="text" id="searchInput" class="search-input" placeholder="Search...">
+    </div>
+    <script src="./BT02.js"></script>
+</body>
+</html>

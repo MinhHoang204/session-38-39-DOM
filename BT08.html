@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+        }
+        label {
+          display: block;
+          margin-bottom: 5px;
+        }
+        input[type="number"] {
+          width: 100px;
+          margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Weight Converter</h1>
+    <div>
+       <label for="kilograms">Kilograms:</label>
+       <input type="number" id="kilograms" oninput="updateWeights('kilograms')" value="0">
+    </div>
+    <div>
+       <label for="grams">Grams:</label>
+       <input type="number" id="grams" oninput="updateWeights('grams')" value="0">
+    </div>
+    <div>
+       <label for="pounds">Pounds:</label>
+       <input type="number" id="pounds" oninput="updateWeights('pounds')" value="0">
+    </div>
+    <div>
+       <label for="ounces">Ounces:</label>
+       <input type="number" id="ounces" oninput="updateWeights('ounces')" value="0">
+    </div>
+    <script src="./BT08.js"></script>
+</body>
+</html>
